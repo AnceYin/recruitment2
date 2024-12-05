@@ -1,0 +1,41 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": ["title"],
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"description": "本表用于记录分类页面各分类信息",
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"title": {
+			"title": "标题",
+			"description": "分类页面的分类标题",
+			"bsonType": "string",
+			"trim": "both"
+		},
+		"sort": {
+			"title": "序号",
+			"bsonType": "int",
+			"description": "按序号从小到大排序,例：1000"
+		},
+		"status": {
+			"title": "状态",
+			"bsonType": "bool",
+			"defaultValue": true,
+			"description": "true表示显示，false表示隐藏"
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "创建时间",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		}
+	}
+}

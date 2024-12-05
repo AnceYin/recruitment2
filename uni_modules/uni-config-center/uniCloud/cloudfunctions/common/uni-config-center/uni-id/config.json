@@ -1,0 +1,51 @@
+{
+	"passwordSecret": "e8bd3f910cd9d2d9c06df66302a1ae90",
+	"tokenSecret": "e8bd3f910cd9d2d9c06df66302a1ae90",
+	"tokenExpiresIn": 604800,
+	"tokenExpiresThreshold": 302400,
+	"passwordErrorLimit": 6,
+	"passwordStrength": "medium",
+	"bindTokenToDevice": false,
+	"passwordErrorRetryTime": 300,
+	"autoSetInviteCode": false,
+	"forceInviteCode": false,
+	"web": {
+		"oauth": {
+			"weixin-h5": {
+				"appid": "wxd9df62f7de2191f4",
+				"appsecret": "2dd58ecfa4d9e3a5bcb4decc407bd55d"
+			},
+			"weixin-web": {
+				"appid": "微信PC页面扫码登录配置appid",
+				"appsecret": "微信PC页面扫码登录配置appsecret"
+			}
+		}
+	},
+	"mp-weixin": {
+		"oauth": {
+			"weixin": {
+				"appid": "wxc3f708a1decede29",
+				"appsecret": "e8bd3f910cd9d2d9c06df66302a1ae90"
+			}
+		}
+	},
+	"service": {
+		"sms": {
+			"name": "应用名称，对应短信模版的name",
+			"codeExpiresIn": 300,
+			"smsKey": "短信密钥key，开通短信服务处可以看到",
+			"smsSecret": "短信密钥secret，开通短信服务处可以看到",
+			"scene": {
+				"bind-mobile-by-sms": {
+					"templateId": "绑定手机号使用的短信验证码模板",
+					"codeExpiresIn": 240
+				}
+			}
+		},
+		"univerify": {
+			"appid": "当前应用的appid，使用云函数URL化，此项必须配置",
+			"apiKey": "apiKey 和 apiSecret 在开发者中心获取，开发者中心：https://dev.dcloud.net.cn/uniLogin/index?type=0，文档：https://ask.dcloud.net.cn/article/37965",
+			"apiSecret": ""
+		}
+	}
+}

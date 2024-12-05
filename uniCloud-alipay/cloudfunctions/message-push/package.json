@@ -1,0 +1,16 @@
+{
+  "name": "message-push",
+  "dependencies": {
+    "uni-subscribemsg": "file:../../../uni_modules/uni-subscribemsg/uniCloud/cloudfunctions/common/uni-subscribemsg"
+  },
+  "extensions": {
+    "uni-cloud-jql": {}
+  },
+  "cloudfunction-config": {
+    "memorySize": 512,
+    "timeout": 60,
+    "path": "/message",
+    "runtime": "Nodejs18",
+    "keepRunningAfterReturn": true
+  }
+}

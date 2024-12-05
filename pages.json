@@ -1,0 +1,316 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue"
+		}
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/club/club",
+			"style": {
+				"navigationBarTitleText": "社团&部门"
+			}
+		},
+		{
+			"path": "pages/classify/classify",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/tweetdetails/tweetdetails",
+			"style": {
+				"navigationBarTitleText": "文章详情页",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/clubdetails/clubdetails",
+			"style": {
+				"navigationBarTitleText": "社团/职位",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "uni_modules/uni-im/pages/index/index",
+			"style": {
+				"navigationBarTitleText": "会话列表",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"color": "#999999",
+							"colorPressed": "#111111",
+							"float": "right",
+							"text": "我的",
+							"fontSize": 14,
+							"onclick": "toLogin"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "uni_modules/uni-im/pages/userList/userList",
+			"style": {
+				"navigationBarTitleText": "用户列表",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "uni_modules/uni-im/pages/chat/chat",
+			"style": {
+				"navigationBarTitleText": "聊天",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "uni_modules/uni-im/pages/common/video/video",
+			"style": {
+				"navigationBarTitleText": "视频播放"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/login/login-withoutpwd",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/login/login-withpwd",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/userinfo/deactivate/deactivate",
+			"style": {
+				"navigationBarTitleText": "注销账号"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/userinfo/bind-mobile/bind-mobile",
+			"style": {
+				"navigationBarTitleText": "绑定手机号码"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/login/login-smscode",
+			"style": {
+				"navigationBarTitleText": "手机验证码登录"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/retrieve/retrieve",
+			"style": {
+				"navigationBarTitleText": "重置密码"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/common/webview/webview",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/userinfo/change_pwd/change_pwd",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/register/register-by-email",
+			"style": {
+				"navigationBarTitleText": "邮箱验证码注册"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/retrieve/retrieve-by-email",
+			"style": {
+				"navigationBarTitleText": "通过邮箱重置密码"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/userinfo/set-pwd/set-pwd",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "设置密码"
+			}
+		},
+		{
+			"path": "pages/campus/campus",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "选择校区"
+			}
+		},
+		{
+			"path": "pages/mycollect/mycollect",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/questionnaire-box/questionnaire-box",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path" : "pages/questionnaire-edit/questionnaire-edit",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/questionnaire-show/questionnaire-show",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/questionnaire-input/questionnaire-input",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/group-booking/group-booking",
+			"style" : 
+			{
+				"navigationBarTitleText" : "拼团大厅"
+			}
+		},
+		{
+			"path" : "pages/newgroup/newgroup",
+			"style" : 
+			{
+				"navigationBarTitleText" : "新建拼团"
+			}
+		},
+		{
+			"path" : "pages/historygroup/historygroup",
+			"style" : 
+			{
+				"navigationBarTitleText" : "历史拼团"
+			}
+		},
+		{
+			"path" : "pages/group-booking-detail/group-booking-detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "拼团详情"
+			}
+		},
+		{
+			"path" : "pages/questionnaire-edit-box/questionnaire-edit-box",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/booking-deal/booking-deal",
+			"style" : 
+			{
+				"navigationBarTitleText" : "拼团协议"
+			}
+		},
+		{
+			"path" : "pages/webview/webview",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+	,{
+    "path": "pages/classify-Info/add",
+    "style": {
+        "navigationBarTitleText": "新增"
+    }
+}
+,{
+    "path": "pages/classify-Info/edit",
+    "style": {
+        "navigationBarTitleText": "编辑"
+    }
+}
+,{
+    "path": "pages/classify-Info/list",
+    "style": {
+        "navigationBarTitleText": "列表"
+    }
+}
+,{
+    "path": "pages/classify-Info/detail",
+    "style": {
+        "navigationBarTitleText": "详情"
+    }
+}
+],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#38BC48",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/首页 (1).png",
+				"selectedIconPath": "static/首页.png"
+			},
+			{
+				"pagePath": "uni_modules/uni-im/pages/index/index",
+				"text": "消息",
+				"iconPath": "static/消息.png",
+				"selectedIconPath": "static/消息 (1).png"
+			},
+			{
+				"pagePath": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+				"text": "个人中心",
+				"iconPath": "static/个人中心.png",
+				"selectedIconPath": "static/个人中心 (1).png"
+			}
+		]
+	},
+	"uniIdRouter": {
+		"loginPage": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+		"needLogin": [
+			"uni_modules/uni-im/pages/index/index"
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

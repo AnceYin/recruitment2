@@ -1,0 +1,9 @@
+{
+  "name": "database",
+  "dependencies": {
+    "uni-im-ext": "file:../../uni_modules/uni-im/uniCloud/cloudfunctions/common/uni-im-ext",
+    "uni-im-utils": "file:../../uni_modules/uni-im/uniCloud/cloudfunctions/common/uni-im-utils",
+    "uni-im-ext-msg-reader": "file:../../uni_modules/uni-im-msg-reader/uniCloud/cloudfunctions/common/uni-im-ext-msg-reader"
+  },
+  "extensions": {}
+}

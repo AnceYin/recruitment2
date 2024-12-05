@@ -1,0 +1,134 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": "'cm' in auth.role",
+		"update": "'cm' in auth.role && doc.author == auth.uid",
+		"delete": "'cm' in auth.role && doc.author == auth.uid"
+	},
+	"description": "本表用于记录分类页面的图文信息",
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"title": {
+			"title": "标题",
+			"description": "标题",
+			"bsonType": "string",
+			"trim": "both"
+		},
+		"star": {
+			"title": "收藏数",
+			"bsonType": "int",
+			"description": "收藏数"
+		},
+		"cover": {
+			"title": "封面",
+			"bsonType": "file",
+			"fileMediaType": "image",
+			"fileExtName": "jpg,png",
+			"description": "封面图片,用于社团的logo和社团列表页的封面"
+		},
+		"png_list":{
+			"bsonType": "array",
+			"arrayType": "file",
+			"title": "照片数组"
+		},
+		"summary":{
+			"title": "简介",
+			"bsonType": "string",
+			"description": "分列展示时的一句话"
+		},
+		"placeholder_right":{
+			"title": "右侧显示信息",
+			"bsonType": "string",
+			"description": "暂定可以放薪资"
+		},
+		"description": {
+			"title": "描述",
+			"bsonType": "string",
+			"description": "描述"
+		},
+		"body": {
+			"bsonType": "array",
+			"arrayType": "file",
+			"title": "正文",
+			"description": "正文部分"
+		},
+		"level": {
+			"title": "层级",
+			"bsonType": "int",
+			"description": "层级，0表示校级，1表示院级"
+		},
+		"label": {
+			"title": "标签",
+			"bsonType": "string",
+			"description": "标签列表，多个标签用,分隔"
+		},
+		"sort": {
+			"title": "序号",
+			"bsonType": "int",
+			"defaultValue":1000,
+			"description": "当前层级下的顺序，由小到大"
+		},
+		"status": {
+			"title": "状态",
+			"bsonType": "bool",
+			"defaultValue": true,
+			"description": "true表示显示，false表示隐藏"
+		},
+		"author": {
+			"title": "作者",
+			"bsonType": "string",
+		    "foreignKey": "uni-id-users._id",
+		    "enum": {
+		        "collection": "uni-id-users",
+				"field": "_id as value, mobile as text"
+		    },
+		    "trim": "both",
+			"description": "点到图文信息中的作者id，用于聊一聊"
+		},
+		"template": {
+			"title": "简历模板",
+			"bsonType": "string",
+		    "foreignKey": "template-resume._id",
+		    "enum": {
+		        "collection": "template-resume",
+				"field": "_id as value, _id as text"
+		    },
+		    "trim": "both",
+			"description": "点到社团/招聘信息中的模板id，用于发简历"
+		},
+		"categoriesType": {
+		    "title": "分类类型",
+		    "bsonType": "string",
+		    "description": "大分类，如勤工助学，用于分类分栏",
+		    "foreignKey": "classify-categories-type._id",
+		    "enum": {
+		        "collection": "classify-categories-type",
+				"field": "_id as value, title as text"
+		    },
+		    "trim": "both"
+		},
+		"elementType": {
+		    "title": "元素类型",
+		    "bsonType": "string",
+		    "description": "小分类，如勤工助学中的助学金，用于筛选",
+		    "foreignKey": "classify-element-type._id",
+		    "enum": {
+		        "collection": "classify-element-type",
+				"field": "_id as value, title as text"
+		    },
+		    "trim": "both"
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "创建时间",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		}
+	}
+}

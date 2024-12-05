@@ -1,0 +1,119 @@
+// db.collection('classify-Info').update({
+// 	star:0
+// })
+// 1. 拿到负责人手机号信息
+       db.collection('uni-id-users').where("mobile=='13881407008'").get(); 
+
+
+// // 2. 给社团负责人权限
+    // db.collection('uni-id-users').where("_id=='67052ab414d9e2960c04e9a9'").update({"role": ["hr","cm"]});
+ // db.collection('uni-id-users').where("_id=='66e97eb70b9a11185fc98699'").update({"_id": "admin");
+ // db.collection('uni-id-users').add({"_id": "admin");
+
+// "author":"66e5418ab5d950c8106f5767"
+ 
+// 校级66c5fe5c0b9a11185f54f326
+// 部门66cac8209d9f915ad26f4ad1
+
+// // 3. 查看是否有此社团
+ // db.collection('classify-Info').where("title=='足球协会'").get() 
+
+
+// // 4. 有就绑定负责人到社团
+// db.collection('classify-Info').where("title=='智能学生会'").update({
+//  	"author":"670525abf688296e4f49af27" // 替换成真实uid，通过第一步获得
+//  });
+
+
+// 4. 没有就创建社团并绑定负责人到社团
+ // db.collection('classify-Info').add(
+ // {
+ //     "author": "66ecf90f7eb8af3316adac89",
+ //     "body": [
+ //         {
+ //             "cloudPath": "1726489456805_0.jpg",
+ //             "extname": "jpg",
+ //             "fileID": "cloud://env-00jxgxphldz6/aGQQPUh8xu442d6b0285f76bc6c47eb20f647ad94b40_1726489456811_0.jpg",
+ //             "fileType": "image",
+ //             "image": {
+ //                 "height": 3768,
+ //                 "location": "http://tmp/aGQQPUh8xu442d6b0285f76bc6c47eb20f647ad94b40.jpg",
+ //                 "width": 1080
+ //             },
+ //             "name": "aGQQPUh8xu442d6b0285f76bc6c47eb20f647ad94b40.jpg",
+ //             "path": "http://tmp/aGQQPUh8xu442d6b0285f76bc6c47eb20f647ad94b40.jpg",
+ //             "size": 934473,
+ //             "status": "success",
+ //             "url": "https://env-00jxgxphldz6.normal.cloudstatic.cn/aGQQPUh8xu442d6b0285f76bc6c47eb20f647ad94b40_1726489456811_0.jpg?expire_at=1726490058&er_sign=684e449a06a2067a4195fe5c8d95343e",
+ //             "uuid": 1726489456805
+ //         }
+ //     ],
+ //     "categoriesType": "66cac8149d9f915ad26f4a39",
+ //     "cover": {
+ //         "cloudPath": "1726489383088_0.png",
+ //         "extname": "png",
+ //         "fileID": "cloud://env-00jxgxphldz6/fGFa10VK1ZmI86a22d56fb7a967ff9e1a4c1ce415597_1726489383101_0.png",
+ //         "fileType": "image",
+ //         "image": {
+ //             "height": 288,
+ //             "location": "http://tmp/fGFa10VK1ZmI86a22d56fb7a967ff9e1a4c1ce415597.png",
+ //             "width": 289
+ //         },
+ //         "name": "fGFa10VK1ZmI86a22d56fb7a967ff9e1a4c1ce415597.png",
+ //         "path": "https://env-00jxgxphldz6.normal.cloudstatic.cn/fGFa10VK1ZmI86a22d56fb7a967ff9e1a4c1ce415597_1726489383101_0.png?expire_at=1726489984&er_sign=c99b8541aabee477f9395892ffcc5e38",
+ //         "size": 8818,
+ //         "status": "success",
+ //         "url": "https://env-00jxgxphldz6.normal.cloudstatic.cn/fGFa10VK1ZmI86a22d56fb7a967ff9e1a4c1ce415597_1726489383101_0.png?expire_at=1726489984&er_sign=c99b8541aabee477f9395892ffcc5e38",
+ //         "uuid": 1726489383090
+ //     },
+ //     "description": "",
+ //     "elementType": "66c5edce5d81875d4b89a080",
+ //     "label": "",
+ //     "level": 0,
+ //     "placeholder_right": "",
+ //     "png_list": [
+ //         {
+ //             "cloudPath": "1726489418910_0.jpg",
+ //             "extname": "jpg",
+ //             "fileID": "cloud://env-00jxgxphldz6/YyXhKMzCeXEd7f22093218db571663ef9224688cb293_1726489418916_0.jpg",
+ //             "fileType": "image",
+ //             "image": {
+ //                 "height": 851,
+ //                 "location": "http://tmp/YyXhKMzCeXEd7f22093218db571663ef9224688cb293.jpg",
+ //                 "width": 1280
+ //             },
+ //             "name": "YyXhKMzCeXEd7f22093218db571663ef9224688cb293.jpg",
+ //             "path": "https://env-00jxgxphldz6.normal.cloudstatic.cn/YyXhKMzCeXEd7f22093218db571663ef9224688cb293_1726489418916_0.jpg?expire_at=1726490020&er_sign=e8de87efd2ddd72e5cbebef00f3cf5d6",
+ //             "size": 148717,
+ //             "status": "success",
+ //             "url": "https://env-00jxgxphldz6.normal.cloudstatic.cn/YyXhKMzCeXEd7f22093218db571663ef9224688cb293_1726489418916_0.jpg?expire_at=1726490020&er_sign=e8de87efd2ddd72e5cbebef00f3cf5d6",
+ //             "uuid": 1726489418910
+ //         },
+ //         {
+ //             "cloudPath": "1726489430678_0.jpg",
+ //             "extname": "jpg",
+ //             "fileID": "cloud://env-00jxgxphldz6/bIua5EK7GRYea03c4c5f23b8844b5355252cb9fa6c78_1726489430682_0.jpg",
+ //             "fileType": "image",
+ //             "image": {
+ //                 "height": 851,
+ //                 "location": "http://tmp/bIua5EK7GRYea03c4c5f23b8844b5355252cb9fa6c78.jpg",
+ //                 "width": 1280
+ //             },
+ //             "name": "bIua5EK7GRYea03c4c5f23b8844b5355252cb9fa6c78.jpg",
+ //             "path": "http://tmp/bIua5EK7GRYea03c4c5f23b8844b5355252cb9fa6c78.jpg",
+ //             "size": 115936,
+ //             "status": "success",
+ //             "url": "https://env-00jxgxphldz6.normal.cloudstatic.cn/bIua5EK7GRYea03c4c5f23b8844b5355252cb9fa6c78_1726489430682_0.jpg?expire_at=1726490031&er_sign=948f345229525eb69d417fc6be8a1119",
+ //             "uuid": 1726489430678
+ //         }
+ //     ],
+ //     "sort": 1005,
+ //     "star": 0,
+ //     "status": true,
+ //     "summary": "校礼仪队",
+ //     "template": "",
+ //     "title": "校礼仪队"
+ // }
+ // )
+
+// "elementType":"66c5fe745d81875d4b8a086b"
